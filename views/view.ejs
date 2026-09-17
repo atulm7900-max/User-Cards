@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: flex;
+        column-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Employe Name: <%= user.name %></h1>
+    <ul>
+      <li>Dept: <%= user.dept %></li>
+      <li>Salary: <%= user.salary.toLocaleString("en-IN") %></li>
+    </ul>
+    <div class="button">
+      <form method="get" action="/users/<%= user._id %>/edit">
+        <button>Edit Details</button>
+      </form>
+      <form method="post" action="/users/<%= user._id %>?_method=DELETE">
+        <button>Delete</button>
+      </form>
+    </div>
+  </body>
+</html>

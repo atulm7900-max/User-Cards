@@ -1,0 +1,107 @@
+* {
+  padding: 0px;
+  margin: 0;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.my-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px !important;
+  margin-left: 10px !important;
+  margin-top: 10px !important;
+}
+
+.my-container {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: start;
+  /* justify-content: space-around; */
+  width: 100vw;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  align-content: start;
+  row-gap: 10px;
+  height: auto;
+  margin: 10px;
+}
+
+.my-card:hover {
+  box-shadow: 2px 2px 10px rgb(116, 142, 160);
+  cursor: pointer;
+}
+
+.my-outer-container {
+  display: flex;
+  position: relative;
+}
+
+.add-post {
+  position: relative;
+  width: 50vw;
+  top: 100px;
+  /* bottom: 10px; */
+  /* border: 2px solid black; */
+}
+
+.post-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  color: red;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+/* input {
+  margin-top: 3px;
+  height: 20px;
+} */
+
+.post-item2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-self: start;
+  margin-left: 20px;
+}
+
+.add-btn {
+  align-self: start;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 5px 12px;
+  font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+  .add-post {
+    position: absolute;
+    width: 60vw;
+    bottom: -25rem;
+    left: 19vw;
+  }
+
+  form {
+    position: absolute;
+    bottom: 0px;
+  }
+}
